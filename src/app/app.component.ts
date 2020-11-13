@@ -11,6 +11,12 @@ export class AppComponent {
 
   opened: boolean = false;
 
+  frameworks = {
+    "parent": "Frameworks",
+    "childs": [
+      "Spring MVC", "Spring JPA", "Spring Security", "AngularJS"
+    ]
+  }
 
   constructor(private navbarService: NavbarService) {
     

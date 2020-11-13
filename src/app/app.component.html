@@ -1,4 +1,5 @@
 <app-header (toogle)="toogle()"></app-header>
+
 <mat-sidenav-container class="body">
 
   <!-- menu  -->
@@ -6,13 +7,22 @@
       <div class="inner-container">
   
         <app-nav-item></app-nav-item>
+
+        <app-nav-item
+        [parentItem] ="frameworks.parent"
+        [childItems] ="frameworks.childs"></app-nav-item>
         
       </div>
     </mat-sidenav>
+
+
   <!-- content -->
     <mat-sidenav-content style="background-color: #e2d8d8;">
   
       <router-outlet></router-outlet>
   
     </mat-sidenav-content>
+
+  
+
 </mat-sidenav-container>

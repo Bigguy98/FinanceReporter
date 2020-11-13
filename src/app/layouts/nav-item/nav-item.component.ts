@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NavItemComponent implements OnInit {
 
   @Input() parentItem: any = 'Languages';
-  @Input() childItems: any[]=  ['AngularJS', 'Java', 'Python'];
+  @Input() childItems: any[]=  ['JavaScript', 'Java', 'Python'];
 
   isCollapsed= true;
 
