@@ -1,0 +1,16 @@
+<div class="aio-nav-menu" (click)="isCollapsed = !isCollapsed">
+    <a class="vertical-menu-item level-1 ">
+      <span>{{parentItem}}</span>
+      <div [class] = "!isCollapsed ? 'fa-rotate-90' :  ''">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </div>
+    </a>
+</div>
+
+
+<div *ngFor="let item of childItems"  [class]="isCollapsed ? 'collapsed aio-nav-menu' : 'expanded aio-nav-menu' ">
+  <a class="vertical-menu-item level-2 ">
+    <span>{{item}}</span>
+  </a>
+</div>
+ 

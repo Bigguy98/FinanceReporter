@@ -1,7 +1,5 @@
-import { getLocaleDateFormat } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { CommonService } from '../common.service';
+import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-table',
