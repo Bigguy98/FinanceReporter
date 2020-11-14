@@ -10,13 +10,17 @@ import { DemoMaterialModule } from './material-module';
 import { NavItemComponent } from './layouts/nav-item/nav-item.component';
 import { TableComponent } from './layouts/table/table.component';
 import { HeaderComponent } from './layouts/header/header.component';
+import { PaymentStatisticComponent } from './layouts/payment-statistic/payment-statistic.component';
+import { FooterComponent } from './layouts/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
     HeaderComponent,
-    NavItemComponent
+    NavItemComponent,
+    PaymentStatisticComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

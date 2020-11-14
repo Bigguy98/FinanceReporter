@@ -1,0 +1,28 @@
+<div style="margin-left: 20px; margin-top: 20px;">
+  <label style="font-weight: bold; font-size: 14pt;">Download this form:</label>
+  
+</div>
+<div style="margin-left: 20px">
+  <label style="font-weight: bold; font-size: 14pt;">Import *xlsx file:</label>
+  <input style="margin-left: 10px;" type="file" (change)="onFileChange($event)" />
+</div>
+
+<p class="table-title">Payment list</p>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Group</th>
+    <th scope="col">Detail</th>
+    <th scope="col">Price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let e of entities; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{ e["Nhóm tiêu dùng"] }}</td>
+    <td>{{ e["Tiêu dùng cụ thể"] }}</td>
+    <td>{{ e["Chi phí"] }}</td>
+  </tr>
+  </tbody>
+</table>

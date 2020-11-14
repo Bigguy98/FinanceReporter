@@ -9,9 +9,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .body {
     height: 100%;
 }
+
 .sidenav {
-    position: fixed;
-    top: 64px;
+    position: fixed !important;
+    top: 64px !important;
     bottom: 0;
     left: 0;
     padding: 0;
@@ -19,6 +20,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #fff;
     box-shadow: 6px 0 6px rgba(0,0,0,.1);
 }
+
+
 
 .inner-container {
     width: 100%;
@@ -105,4 +108,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     .chart-line2 {
         padding: 0px 10px 0px 25px;
     }
+}
+.table-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+    color: green;
+
+}
+
+.collapse-footer {
+    margin-left: 260px;
+}
+
+.my-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.my-content {
+    padding: 80px 3rem 2rem;
 }
