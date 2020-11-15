@@ -12,6 +12,7 @@ import { TableComponent } from './layouts/table/table.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { PaymentStatisticComponent } from './layouts/payment-statistic/payment-statistic.component';
 import { FooterComponent } from './layouts/footer/footer.component';
+import { InstructionModalComponent } from './layouts/modals/instruction-modal/instruction-modal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './layouts/footer/footer.component';
     HeaderComponent,
     NavItemComponent,
     PaymentStatisticComponent,
-    FooterComponent
+    FooterComponent,
+    InstructionModalComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
     DemoMaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [InstructionModalComponent]
 })
 export class AppModule { }

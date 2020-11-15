@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import * as XLSX from 'xlsx';
+import { InstructionModalComponent } from '../modals/instruction-modal/instruction-modal.component';
 
 @Component({
   selector: 'app-payment-statistic',
@@ -10,9 +12,10 @@ export class PaymentStatisticComponent implements OnInit {
 
   entities: any;
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
+    this.modalService.open(InstructionModalComponent, { keyboard:true, backdrop: "static"} );
   }
 
   onFileChange(ev: any) {
@@ -33,5 +36,9 @@ export class PaymentStatisticComponent implements OnInit {
       console.log(JSON.stringify(jsonData.Sheet1));
     }
     reader.readAsBinaryString(file);
+  }
+
+  showInstructionModal(): void {
+    this.modalService.open(InstructionModalComponent, { keyboard:true, backdrop: "static"} );
   }
 }
